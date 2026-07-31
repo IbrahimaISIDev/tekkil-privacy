@@ -7,31 +7,24 @@ préparation aux concours au Sénégal, éditée par K-Edtech), maintenu dans
 
 Ce document est requis publiquement par les stores mobiles (Google Play / App Store) et
 par le RGPD/la loi sénégalaise sur la protection des données personnelles (droit d'accès,
-de rectification et de suppression — contact : `privacy@tekkil.sn`).
+de rectification et de suppression — contact : `ibrahimadev6@k-edtech.com`).
 
-## ⚠️ Constat à vérifier
+## Statut — source de vérité
 
-L'URL publique référencée dans les checklists de soumission mobile
-(`tekkil-mobile/PLAY_STORE.md`) est **`https://tekkil.sn/privacy`**. Or cette route est
-actuellement servie par [`TEKKIL_Landing_Page`](../TEKKIL_Landing_Page)
-(`app/privacy/page.tsx`, contenu dans `components/sections/Privacy.tsx`), **pas par ce
-repo** — aucun fichier `CNAME` ni configuration Pages n'a été trouvé ici qui pointerait
-vers `tekkil.sn/privacy`.
+Ce repo (`index.md`) est la **source de vérité** du texte légal. Il existe deux autres
+copies, tenues manuellement synchronisées sur son contenu à chaque mise à jour :
 
-Il existe donc actuellement **trois copies** du même texte légal, avec un risque réel de
-divergence dans le temps :
-1. Ce repo (`tekkil-privacy/index.md`) — dernière mise à jour 5 mai 2026
-2. `TEKKIL_Landing_Page/components/sections/Privacy.tsx` — la version réellement servie
-   sur `tekkil.sn/privacy`
-3. `tekkil-mobile/lib/features/profile/presentation/pages/privacy_policy_page.dart` —
-   texte affiché directement dans l'app (contenu résumé en 7 sections, pas identique
-   mot pour mot à ce fichier)
+1. `TEKKIL_Landing_Page/app/privacy/page.tsx` — page complète servie sur
+   `https://tekkil.sn/privacy` (l'URL référencée dans `tekkil-mobile/PLAY_STORE.md`).
+   `TEKKIL_Landing_Page/components/sections/Privacy.tsx` n'en est qu'un résumé en 5
+   points sur la page d'accueil, avec un lien vers la page complète — ce n'est pas une
+   troisième version divergente.
+2. `tekkil-mobile/lib/features/profile/presentation/pages/privacy_policy_page.dart` —
+   texte affiché directement dans l'app, adapté au format mobile (listes à puces plutôt
+   que tableaux) mais couvrant les mêmes 10 sections.
 
-**À clarifier avec l'équipe** : soit ce repo est un brouillon/une ancienne version qui
-peut être considéré comme obsolète au profit de `TEKKIL_Landing_Page`, soit c'est censé
-être la source de vérité et `TEKKIL_Landing_Page` devrait aller chercher son contenu ici
-au build. Dans tous les cas, une seule source de vérité devrait piloter les deux autres
-copies pour éviter que la politique affichée diffère selon où l'utilisateur la consulte.
+Synchronisé le 31 juillet 2026 : email de contact unifié (`ibrahimadev6@k-edtech.com`)
+et date de dernière mise à jour alignée (5 mai 2026) sur les trois copies.
 
 ## Mettre à jour le contenu
 
